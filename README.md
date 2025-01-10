@@ -4,7 +4,7 @@ This repository contains a Solidity smart contract (`WChainDapp.sol`) for a stak
 
 ## Contract Overview
 
-The `WChainDapp` contract inherits from a `MyToken` contract (assumed to be an ERC20-compatible token) and uses an external ERC20 token (`dappToken`) for staking and rewards. It implements the following features:
+The `WChainDapp` contract inherits from a `WToken` contract (assumed to be an ERC20-compatible token) and uses an external ERC20 token (`dappToken`) for staking and rewards. It implements the following features:
 
 *   **Tiered Rewards:** Users can deposit tokens into different tiers, each with its own reward rate (in basis points) and lock time (in seconds).
 *   **Whitelisting:** Only whitelisted users can deposit tokens.
@@ -15,8 +15,8 @@ The `WChainDapp` contract inherits from a `MyToken` contract (assumed to be an E
 
 ## Contract Details
 
-*   **`Dapp.sol`:** The main contract implementing the staking logic.
-*   **`Token.sol`:** (Included by import) The ERC20 token contract used for staking (assumed to be in the same directory).
+*   **`WChainDapp.sol`:** The main contract implementing the staking logic.
+*   **`WToken.sol`:** (Included by import) The ERC20 token contract used for staking (assumed to be in the same directory).
 *   **Dependencies:**
     *   `@openzeppelin/contracts`: For the `IERC20` interface.
 
